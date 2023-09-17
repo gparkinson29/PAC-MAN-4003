@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
             if (lastPosition!=currentPosition)
             {
                 pastPositions.Insert(0, this.transform.position);
-               // DrawTail();
+                DrawTail();
             } 
         }
         
@@ -89,7 +89,7 @@ public class Player : MonoBehaviour
         tailLength--;
     }
 
-   /* void DrawTail()
+    void DrawTail()
     {
         int index = 1;
         foreach (TailComponent tc in tailComponents)
@@ -100,7 +100,7 @@ public class Player : MonoBehaviour
             index++;
         }
     }
-   */
+   
     void IncreaseTail()
     {
         int lastTailIndex = tailLength % 10;
