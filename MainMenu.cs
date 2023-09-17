@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu: MonoBehaviour
 {
     [SerializeField]
     private string scoreFileName;
@@ -21,22 +21,31 @@ public class MainMenu : MonoBehaviour
     //---button event handlers
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void ViewScores()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("HighScores");
     }
 
     public void ViewControls()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
+    }
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 }
