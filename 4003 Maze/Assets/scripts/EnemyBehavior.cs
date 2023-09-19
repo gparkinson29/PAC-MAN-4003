@@ -8,6 +8,10 @@ public class EnemyBehavior : MonoBehaviour
 
     public NavMeshAgent navMeshAgent;
     public Transform[] waypoints;
+    public GameManager info; 
+
+    private bool chase, flee;
+    string nombre; 
 
     int m_CurrentWaypointIndex = 0;
 
@@ -16,39 +20,59 @@ public class EnemyBehavior : MonoBehaviour
     {
         m_CurrentWaypointIndex = 0; 
         navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);
+        chase = false;
+        flee = false;
+        info = Camera.main.GetComponent<GameManager>();
+        nombre = this.tag;
+        //Debug.Log(nombre); 
     }
 
     // Update is called once per frame
     void Update()
     {
-        patrol(); 
+        behaviorCheck();
+        behaviorTree(); 
     }
 
 
-    void patrol()
+    void behaviorCheck()
     {
 
-        
+    }
+    
+    void behaviorTree()
+    {
+        if (chase) { }
 
+        else if (flee) { }
+
+        else {
+
+            patrol();
         
+        }
+    }
+
+    void patrol()
+    {
 
         if (navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance)
         {
 
             int randomnum = Random.Range(0, 4);
-            //m_CurrentWaypointIndex = m_CurrentWaypointIndex + 1;
             
-
-            //if (m_CurrentWaypointIndex > 5)
-           // {
-           //     m_CurrentWaypointIndex = 0;
-           // }
-
             navMeshAgent.SetDestination(waypoints[randomnum].position);
             Debug.Log(randomnum);
-
 
         }
     }
 
+    void OnTriggerEnter(Collider cos)
+    {
+        if (cos.gameObject.tag.Equals("Player"))
+        {
+            Debug.Log("boop");
+            info.checkKill(nombre); 
+        }
+    }
 }

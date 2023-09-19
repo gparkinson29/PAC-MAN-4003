@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.AI;
 using System;
 
+
 public class Player : MonoBehaviour
 {
     [SerializeField]
@@ -17,7 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Vector3 movementDirection, currentPosition, lastPosition;
     [SerializeField]
-    private int tailLength, spacing;
+    public int tailLength, spacing;
     [SerializeField]
     private string pelletPrefabName;
     [SerializeField]
@@ -25,6 +26,8 @@ public class Player : MonoBehaviour
     [SerializeField]
     private List<TailComponent> tailComponents;
     
+
+   
 
     void Awake()
     {
@@ -34,6 +37,7 @@ public class Player : MonoBehaviour
         spacing = 10;
         tailComponents = new List<TailComponent>(10);
         pastPositions = new List<Vector3>(100);
+        
     }
 
     void Update()
@@ -43,6 +47,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+       
         movementDirection = new Vector3 (xInput, 0f, zInput);
         nma.Move(movementDirection * Time.deltaTime * nma.speed);
         this.transform.LookAt(movementDirection);
@@ -57,8 +62,9 @@ public class Player : MonoBehaviour
                 DrawTail();
             } 
         }
+
         
-       
+
         if (pastPositions.Count>101)
         {
             pastPositions.RemoveAt(101);
@@ -117,5 +123,5 @@ public class Player : MonoBehaviour
         tailLength++;
     }
 
-
+  
 }
