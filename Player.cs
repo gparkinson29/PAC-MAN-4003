@@ -11,9 +11,6 @@ public class Player : MonoBehaviour
     private float xInput, zInput;
     [SerializeField]
     private NavMeshAgent nma;
-    private RaycastHit hit;
-    [SerializeField]
-    private LayerMask wallsLayer;
     [SerializeField]
     private Vector3 movementDirection, currentPosition, lastPosition;
     [SerializeField]
@@ -24,7 +21,10 @@ public class Player : MonoBehaviour
     private List<Vector3> pastPositions;
     [SerializeField]
     private List<TailComponent> tailComponents;
-    
+    [SerializeField]
+    private GameObject projectilePrefab;
+    [SerializeField]
+    private Transform projectileSpawn;
 
     void Awake()
     {
@@ -38,6 +38,11 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+        if (pastPositions.Count > 201)
+        {
+            pastPositions.RemoveAt(201);
+        }
     }
 
     // Update is called once per frame
@@ -45,7 +50,8 @@ public class Player : MonoBehaviour
     {
         movementDirection = new Vector3 (xInput, 0f, zInput);
         nma.Move(movementDirection * Time.deltaTime * nma.speed);
-        this.transform.LookAt(movementDirection);
+        
+        transform.rotation = Quaternion.LookRotation(movementDirection, Vector3.up);
 
         if (movementDirection != Vector3.zero)
         {
@@ -58,11 +64,7 @@ public class Player : MonoBehaviour
             } 
         }
         
-       
-        if (pastPositions.Count>101)
-        {
-            pastPositions.RemoveAt(101);
-        }
+
 
     }
 
@@ -76,7 +78,7 @@ public class Player : MonoBehaviour
 
     }
 
-    //---Input Action Events
+    //---Input Action Events---
     void OnMove(InputValue value)
     {
         Vector2 inputVector = value.Get<Vector2>();
@@ -86,9 +88,20 @@ public class Player : MonoBehaviour
 
     void OnStun()
     {
-        tailLength--;
+        Instantiate(projectilePrefab, projectileSpawn.position, projectileSpawn.rotation);
     }
 
+    void OnDash()
+    {
+    }
+
+    void OnLure()
+    {
+
+    }
+
+
+    //---Tail Handling Functions---
     void DrawTail()
     {
         int index = 1;
@@ -117,5 +130,21 @@ public class Player : MonoBehaviour
         tailLength++;
     }
 
+    void DecreaseTail()
+    {
+        int lastTailIndex = tailLength % 10;
+        if (tailLength>10)
+        {
+            tailComponents[lastTailIndex].LowerValue(1);
+        }
+        else
+        {
+        }
+    }
 
+    //---Skill Handling Coroutines---
+    IEnumerator DashCoroutine()
+    {
+        yield return new WaitForSeconds(5f);
+    }
 }
