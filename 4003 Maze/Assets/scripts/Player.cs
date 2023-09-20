@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private List<Vector3> pastPositions;
     [SerializeField]
-    private List<TailComponent> tailComponents;
+    public List<TailComponent> tailComponents;
     
 
    
@@ -123,5 +123,6 @@ public class Player : MonoBehaviour
         tailLength++;
     }
 
+    
   
 }

@@ -2430,7 +2430,7 @@ Light:
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 1
+  m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
@@ -3318,6 +3318,10 @@ MonoBehaviour:
   tailCounter: {fileID: 2143410979}
   waveCounter: {fileID: 2048061054}
   player1: {fileID: 0}
+  oneenemy1: {fileID: 0}
+  twoenemy2: {fileID: 0}
+  threeenemy3: {fileID: 0}
+  fourenemy4: {fileID: 0}
   playerInfo: {fileID: 0}
   enemy1dam: 0
   enemy2dam: 0

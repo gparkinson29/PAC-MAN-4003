@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
     }
     public void HowTo()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("HowTo");
     }
     public void Credits()
     {

@@ -9,10 +9,12 @@ public class TailComponent : MonoBehaviour
     private int value;
     [SerializeField]
     private CharacterController cc;
+    public GameManager info;
 
     void Start()
     {
         value = 1;
+        info = Camera.main.GetComponent<GameManager>(); 
     }
 
     public CharacterController GetCharacterController()
@@ -58,5 +60,32 @@ public class TailComponent : MonoBehaviour
         {
 
         }
+    }
+
+    public void OnTriggerEnter(Collider cos)
+    {
+        if (cos.gameObject.tag.Equals("Player"))
+        {
+            Debug.Log("you boned your tail");
+            info.isHitFront = true;
+            info.EndGame(); 
+        }
+        else if (cos.gameObject.tag.Equals("enemy1")) 
+        {
+            Debug.Log("boaner1");
+        }
+        else if (cos.gameObject.tag.Equals("enemy2")) 
+        {
+            Debug.Log("boaner2");
+        }
+        else if (cos.gameObject.tag.Equals("enemy3")) 
+        {
+            Debug.Log("boaner3");
+        }
+        else if (cos.gameObject.tag.Equals("enemy4"))
+        {
+            Debug.Log("boaner4");
+        }
+    
     }
 }

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private string playerPrefabName;
     [SerializeField]
-    private bool isHighScore, isGameOver, isHitFront, isHitBack, hasNoTail;
+    public bool isHighScore, isGameOver, isHitFront, isHitBack, hasNoTail;
     [SerializeField]
     private int currentScore;
     private HighScoreManager scoreManager;
@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate()
     {
+        CheckForTail(); 
         tailCounter.text = "Tail Length: " + playerInfo.tailLength.ToString();
         waveCounter.text = "Wave: " + waveCounterNum.ToString(); 
     }
@@ -99,25 +100,33 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void EndGame()
+    void CheckForTail()
+    {
+        if(playerInfo.tailLength > 0)
+        {
+            hasNoTail = false; 
+        }
+    }
+
+    public void EndGame()
     {
         if ((isHitFront) || (isHitBack && hasNoTail))
         {
-            isHighScore = scoreManager.CheckForHighScore(currentScore);
-            if (isHighScore)
-            {
-                initialsField.gameObject.SetActive(true);
-                initialsField.enabled = true;
-                initialsField.ActivateInputField();
-                submitHighScoreButton.gameObject.SetActive(true);
-            }
-            else
-            {
+        //    isHighScore = scoreManager.CheckForHighScore(currentScore);
+       //     if (isHighScore)
+       //     {
+       //         initialsField.gameObject.SetActive(true);
+       //         initialsField.enabled = true;
+        //        initialsField.ActivateInputField();
+        //        submitHighScoreButton.gameObject.SetActive(true);
+       //     }
+       //     else
+        //    {
                 SceneManager.LoadScene(0);
             }
             
         }
-    }
+ //   }
 
     void ReturnToTitle()
     {

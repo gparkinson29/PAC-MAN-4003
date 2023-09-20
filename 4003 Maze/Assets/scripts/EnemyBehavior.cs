@@ -67,7 +67,7 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider cos)
+    public void OnTriggerEnter(Collider cos)
     {
         if (cos.gameObject.tag.Equals("Player"))
         {
