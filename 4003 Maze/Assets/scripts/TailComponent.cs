@@ -10,10 +10,12 @@ public class TailComponent : MonoBehaviour
     private MeshRenderer renderer;
     [SerializeField]
     private Material value1Mat, value2Mat, value3Mat, value4Mat, value5Mat;
+    public GameManager info;
 
     void Start()
     {
         value = 1;
+        info = Camera.main.GetComponent<GameManager>();
     }
 
 
@@ -60,4 +62,33 @@ public class TailComponent : MonoBehaviour
             Debug.LogError("no additional tail components allowed");
         }
     }
+
+    public void OnTriggerEnter(Collider cos)
+    {
+        if (cos.gameObject.tag.Equals("Player"))
+        {
+            Debug.Log("you boned your tail");
+            info.isHitFront = true;
+            info.EndGame();
+        }
+        else if (cos.gameObject.tag.Equals("enemy1"))
+        {
+            Debug.Log("boaner1");
+        }
+        else if (cos.gameObject.tag.Equals("enemy2"))
+        {
+            Debug.Log("boaner2");
+        }
+        else if (cos.gameObject.tag.Equals("enemy3"))
+        {
+            Debug.Log("boaner3");
+        }
+        else if (cos.gameObject.tag.Equals("enemy4"))
+        {
+            Debug.Log("boaner4");
+        }
+
+    }
+
+
 }

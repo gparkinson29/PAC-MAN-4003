@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Vector3 movementDirection, currentPosition, lastPosition;
     [SerializeField]
-    private int tailLength, spacing;
+    public int tailLength, spacing;
     [SerializeField]
     private string pelletPrefabName;
     [SerializeField]
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
         movementDirection = new Vector3 (xInput, 0f, zInput);
         nma.Move(movementDirection * Time.deltaTime * nma.speed);
         
-        transform.rotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+       // transform.rotation = Quaternion.LookRotation(movementDirection, Vector3.up);
 
         if (movementDirection != Vector3.zero)
         {
