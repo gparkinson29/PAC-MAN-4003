@@ -130,16 +130,25 @@ public class Player : MonoBehaviour
         tailLength++;
     }
 
-    void DecreaseTail()
+    public void DecreaseTail()
     {
         int lastTailIndex = tailLength % 10;
         if (tailLength>10)
         {
             tailComponents[lastTailIndex].LowerValue(1);
+           
         }
         else
         {
+            TailComponent deadTailPellet = tailComponents[tailLength-1];
+            Destroy(deadTailPellet.gameObject);
+            
+            tailLength--;
         }
+
+        
+
+
     }
 
     //---Skill Handling Coroutines---

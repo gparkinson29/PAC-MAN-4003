@@ -25,7 +25,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Pellet[] pellets;
     private bool isPlayerAlive;
-    private int waveCounterNum; 
+    private int waveCounterNum;
+    private int aliveEnemies; 
     
     public TextMeshProUGUI tailCounter;
     public TextMeshProUGUI waveCounter; 
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
     public int enemy2dam;
     public int enemy3dam;
     public int enemy4dam;
+    
 
     void Awake()
     {
@@ -70,13 +72,14 @@ public class GameManager : MonoBehaviour
         enemy1dam = 5;
         enemy2dam = 5;
         enemy3dam = 5;
-        enemy4dam = 5; 
+        enemy4dam = 5;
+        aliveEnemies = 4; 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        nextWave();
     }
 
     void FixedUpdate()
@@ -148,8 +151,19 @@ public class GameManager : MonoBehaviour
 
     void nextWave()
     {
+        if (aliveEnemies == 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
+
+    public void tailTime()
+    {
+        int wish = playerInfo.tailLength/2;
+        playerInfo.DecreaseTail();
 
     }
+
 
     public void checkKill(string tag)
     {
@@ -160,6 +174,12 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("Enemy 1 down!");
                     Destroy(oneenemy1);
+                    aliveEnemies--;
+                }
+                else
+                {
+                    isHitFront = true;
+                    EndGame();
                 }
                 break;
             case "enemy2":
@@ -167,6 +187,12 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("Enemy 2 down!");
                     Destroy(twoenemy2);
+                    aliveEnemies--;
+                }
+                else
+                {
+                    isHitFront = true;
+                    EndGame();
                 }
                 break;
             case "enemy3":
@@ -174,6 +200,12 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("Enemy 3 down!");
                     Destroy(threeenemy3);
+                    aliveEnemies--;
+                }
+                else
+                {
+                    isHitFront = true;
+                    EndGame();
                 }
                 break;
             case "enemy4":
@@ -181,6 +213,12 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("Enemy 4 down!");
                     Destroy(fourenemy4);
+                    aliveEnemies--;
+                }
+                else
+                {
+                    isHitFront = true;
+                    EndGame();
                 }
                 break; 
         }

@@ -11,7 +11,8 @@ public class MainMenu : MonoBehaviour
     }
     public void Quit()
     {
-        Debug.Log("Game Closed");
+        
+        Application.Quit();
     }
     public void HighScores()
     {

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7067152126156581041}
   - component: {fileID: 7067152126156581036}
   - component: {fileID: 6892276767289680935}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: enemy4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,6 +143,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  info: {fileID: 0}
+  player1: {fileID: 0}
+  playerLocation: {x: 0, y: 0, z: 0}
 --- !u!54 &6892276767289680935
 Rigidbody:
   m_ObjectHideFlags: 0

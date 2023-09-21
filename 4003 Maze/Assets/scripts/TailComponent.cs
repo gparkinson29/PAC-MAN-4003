@@ -16,6 +16,7 @@ public class TailComponent : MonoBehaviour
     {
         value = 1;
         info = Camera.main.GetComponent<GameManager>();
+        renderer = this.GetComponent<MeshRenderer>(); 
     }
 
 
@@ -73,19 +74,27 @@ public class TailComponent : MonoBehaviour
         }
         else if (cos.gameObject.tag.Equals("enemy1"))
         {
-            Debug.Log("boaner1");
+            Debug.Log("enemy1 contact tail!");
+            info.tailTime();
+            
         }
         else if (cos.gameObject.tag.Equals("enemy2"))
         {
-            Debug.Log("boaner2");
+            Debug.Log("enemy2 contact tail!");
+            info.tailTime();
+            
         }
         else if (cos.gameObject.tag.Equals("enemy3"))
         {
-            Debug.Log("boaner3");
+            Debug.Log("enemy3 contact tail!");
+            info.tailTime();
+            
         }
         else if (cos.gameObject.tag.Equals("enemy4"))
         {
-            Debug.Log("boaner4");
+            Debug.Log("enemy4 contact tail!");
+            info.tailTime();
+            
         }
 
     }

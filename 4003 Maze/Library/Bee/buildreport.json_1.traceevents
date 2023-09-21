@@ -1,0 +1,680 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1695334213491865, "dur": 1025517, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1695334213492165, "dur": 8940, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1695334213501107, "dur": 71719, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1695334213572871, "dur": 289551, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1695334213862424, "dur": 651177, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1695334214513604, "dur": 3777, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1695334214518162, "dur": 14, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1695334213534530, "dur":10897, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213545439, "dur":90, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1695334213545552, "dur":18, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1695334213545572, "dur":456, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1695334213546075, "dur":764, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213546839, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213552994, "dur":278, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553273, "dur":18, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553291, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553294, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553305, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553308, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553318, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553320, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553329, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553332, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553339, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553342, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553349, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553351, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553358, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553360, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553368, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553369, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213553397, "dur":1726, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1695334213546656, "dur":194, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334213546853, "dur":6133, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213546691, "dur":168, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213546860, "dur":6141, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213546821, "dur":71, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213546892, "dur":6108, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213546705, "dur":163, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213546868, "dur":6141, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213546919, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213546920, "dur":6077, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213546757, "dur":117, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213546875, "dur":6119, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213546806, "dur":76, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213546883, "dur":6112, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213546879, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213546880, "dur":6126, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213556603, "dur":428, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1695334214518318, "dur": 6361, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1695334213702549, "dur": 139088, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1695334213704005, "dur": 54567, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1695334213819928, "dur": 7269, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1695334213827201, "dur": 14428, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1695334213828502, "dur": 12204, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1695334213847578, "dur": 1649, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1695334213846562, "dur": 2698, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1695334214524830, "dur": 5916, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1695334213920132, "dur":11397, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213931539, "dur":611, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1695334213932165, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1695334213932187, "dur":347, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1695334213932559, "dur":694, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334213933253, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214456802, "dur":274, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457076, "dur":19, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457095, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457099, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457109, "dur":41, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457150, "dur":26, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457176, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457180, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457192, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457195, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457205, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457208, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457216, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457219, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457226, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457228, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457236, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457250, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214457271, "dur":30087, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1695334213932994, "dur":277, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334213933272, "dur":7036, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334213940318, "dur":322, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":1, "ts":1695334213940640, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334213940730, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334213944867, "dur":2438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":1, "ts":1695334213947387, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1695334213947545, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334213947661, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334213947799, "dur":2636, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1695334213950650, "dur":211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1695334213950861, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334213950959, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334213950985, "dur":24449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1695334213975504, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334213975567, "dur":125452, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214101030, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214101039, "dur":2278, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214103404, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214103492, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214103566, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214103573, "dur":12812, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214116468, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214116564, "dur":195, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214116765, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214116771, "dur":2066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214118908, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214119006, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214119121, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214119126, "dur":13679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214132876, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214132949, "dur":363, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214133317, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214133322, "dur":25017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214158431, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214158511, "dur":13413, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214171936, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214171944, "dur":2666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214174688, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214174767, "dur":162, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214174934, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214174939, "dur":3870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214178923, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214179007, "dur":414, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214179427, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214179432, "dur":4516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214184029, "dur":117673, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214301703, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214301780, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214301826, "dur":1354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1695334214303254, "dur":674, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1695334214303935, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214303940, "dur":9809, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":1, "ts":1695334214314125, "dur":1839, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1695334214315965, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214316059, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214316066, "dur":1374, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1695334214317512, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1695334214317593, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214317599, "dur":2760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1695334214320437, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/level4" }}
+,{ "pid":12345, "tid":1, "ts":1695334214320537, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214320543, "dur":1467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/level4" }}
+,{ "pid":12345, "tid":1, "ts":1695334214322085, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/level3" }}
+,{ "pid":12345, "tid":1, "ts":1695334214322164, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214322169, "dur":2960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/level3" }}
+,{ "pid":12345, "tid":1, "ts":1695334214325208, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/level2" }}
+,{ "pid":12345, "tid":1, "ts":1695334214325295, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214325301, "dur":1389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/level2" }}
+,{ "pid":12345, "tid":1, "ts":1695334214326768, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/level1" }}
+,{ "pid":12345, "tid":1, "ts":1695334214326860, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214326865, "dur":1930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/level1" }}
+,{ "pid":12345, "tid":1, "ts":1695334214328926, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1695334214329016, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214329021, "dur":1913, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/level0" }}
+,{ "pid":12345, "tid":1, "ts":1695334214331011, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1695334214331095, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1695334214331101, "dur":3269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1695334214334441, "dur":122353, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213932992, "dur":270, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213933262, "dur":7048, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213940318, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1695334213940504, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213940650, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213943155, "dur":3391, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1695334213946707, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1695334213946857, "dur":185, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213947048, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213947219, "dur":2625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1695334213949956, "dur":345, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334213950302, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213950373, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334213950484, "dur":47000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334213997554, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334213997611, "dur":103410, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214101031, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214101039, "dur":2753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214103870, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214103957, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214104059, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214104065, "dur":13059, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214117197, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214117286, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214117379, "dur":16, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214117401, "dur":1830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214119310, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214119383, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214119466, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214119471, "dur":13129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214132683, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214132770, "dur":383, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214133160, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214133166, "dur":25329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214158584, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214158665, "dur":13260, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214171935, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214171944, "dur":2009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214174069, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214174168, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214174237, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214174243, "dur":1689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214176153, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214176248, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214176375, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214176381, "dur":1494, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214177954, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214178030, "dur":191, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214178229, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214178236, "dur":3115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214181431, "dur":134910, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214316342, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214316435, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214316442, "dur":1480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1695334214318010, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1695334214318186, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214318192, "dur":2567, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1695334214320825, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/level3.resS" }}
+,{ "pid":12345, "tid":2, "ts":1695334214320901, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214320906, "dur":1264, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/level3.resS" }}
+,{ "pid":12345, "tid":2, "ts":1695334214322237, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/level2.resS" }}
+,{ "pid":12345, "tid":2, "ts":1695334214322307, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214322311, "dur":2982, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/level2.resS" }}
+,{ "pid":12345, "tid":2, "ts":1695334214325362, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1695334214325433, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214325438, "dur":1491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1695334214327003, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1695334214327081, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214327085, "dur":1937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/level0.resS" }}
+,{ "pid":12345, "tid":2, "ts":1695334214329100, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1695334214329188, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1695334214329193, "dur":6008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1695334214335278, "dur":121503, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213933252, "dur":3, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213933255, "dur":7046, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213940317, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1695334213940319, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213940450, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1695334213940453, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213940531, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213941507, "dur":3023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1695334213944532, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1695334213944700, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213944767, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213944858, "dur":1577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1695334213946517, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1695334213946668, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213946776, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213947663, "dur":1622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1695334213949363, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213949493, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213949576, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213949868, "dur":4428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213954381, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213954458, "dur":1292, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213955794, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213956348, "dur":9733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213966203, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213966279, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213966348, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213966354, "dur":1485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213967915, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213968009, "dur":150, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213968165, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213968171, "dur":1305, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213969537, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213969602, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213969685, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213969691, "dur":1351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213971125, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334213971199, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213971329, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334213971334, "dur":131033, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214102799, "dur":432, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214103232, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214103309, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214103316, "dur":12249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214115656, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214115741, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214115829, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214115836, "dur":2232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214118152, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214118234, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214118396, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214118403, "dur":12541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214131005, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214131060, "dur":180, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214131248, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214131257, "dur":2347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214133818, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214133899, "dur":154, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214134140, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214134147, "dur":39425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214173655, "dur":546, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214174202, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214174273, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214174278, "dur":1915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214176265, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214176340, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214176490, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214176501, "dur":2640, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214179230, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214179310, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214179397, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214179403, "dur":3943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214183426, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214183510, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214183585, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214183593, "dur":3212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214186878, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214186954, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214187026, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214187033, "dur":2437, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214189542, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214189612, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214189679, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214189686, "dur":10830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214200593, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214200669, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214200747, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214200754, "dur":25578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214226405, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214226473, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214226544, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214226551, "dur":1330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214227952, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214228021, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214228088, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214228093, "dur":1643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214229804, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214229876, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214229942, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214229948, "dur":1733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214231752, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214231828, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214231896, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214231902, "dur":1321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214233294, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214233396, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214233469, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214233503, "dur":1172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214234748, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214234820, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214234890, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214234896, "dur":1763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214236730, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214236797, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214236860, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214236868, "dur":1620, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214238556, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214238625, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214238693, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214238699, "dur":1160, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214239928, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214240000, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214240063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214240069, "dur":1472, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214241609, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214241678, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214241743, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214241748, "dur":3234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214245052, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214245122, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214245196, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214245202, "dur":2862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214248134, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214248206, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214248280, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214248287, "dur":12537, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214260909, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214260984, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214261065, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214261072, "dur":2622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214263764, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214263838, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214263913, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214263919, "dur":1509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214265498, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214265572, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214265645, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214265652, "dur":1484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214267207, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214267277, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214267345, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214267351, "dur":1854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214269284, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214269359, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214269432, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214269439, "dur":3891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214273410, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214273484, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214273584, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214273591, "dur":1596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214275259, "dur":78944, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214354213, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1695334214354220, "dur":1152, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1695334214355425, "dur":101355, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213933056, "dur":221, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213933278, "dur":7031, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213940318, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1695334213940504, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213940576, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213943010, "dur":3103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1695334213946204, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1695334213946365, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213946441, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213946449, "dur":1683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1695334213948210, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1695334213948341, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213948461, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213948467, "dur":4029, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1695334213952585, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1695334213952670, "dur":3135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213955811, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213956384, "dur":10198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1695334213966668, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1695334213966745, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213966831, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213966865, "dur":1712, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1695334213968656, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1695334213968737, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213968822, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213968828, "dur":1820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1695334213970725, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1695334213970801, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213970972, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334213970978, "dur":131021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1695334214102079, "dur":190074, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1695334214292154, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334214292253, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334214292260, "dur":1348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1695334214293675, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1695334214293760, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334214293854, "dur":1343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1695334214295267, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":4, "ts":1695334214295346, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334214295352, "dur":2010, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":4, "ts":1695334214297438, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":4, "ts":1695334214297518, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334214297524, "dur":2534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":4, "ts":1695334214300133, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":4, "ts":1695334214300214, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334214300221, "dur":1416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":4, "ts":1695334214301709, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1695334214301819, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334214301826, "dur":1325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1695334214303223, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1695334214303300, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334214303306, "dur":6840, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1695334214310246, "dur":30505, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":4, "ts":1695334214340752, "dur":170, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334214340941, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1695334214340970, "dur":1856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":4, "ts":1695334214342917, "dur":113866, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213933120, "dur":163, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213933283, "dur":7042, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213940327, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1695334213940510, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213940628, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213942832, "dur":3411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1695334213946322, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1695334213946465, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213946537, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213946544, "dur":1868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1695334213948491, "dur":202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":5, "ts":1695334213948694, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213948769, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213948774, "dur":2886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":5, "ts":1695334213951766, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze.exe" }}
+,{ "pid":12345, "tid":5, "ts":1695334213951845, "dur":3905, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213955789, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213955796, "dur":1774, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze.exe" }}
+,{ "pid":12345, "tid":5, "ts":1695334213957634, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334213957690, "dur":7845, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213965547, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213965745, "dur":1453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334213967272, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334213967354, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213967422, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213967428, "dur":1472, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334213968987, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334213969059, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213969139, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213969143, "dur":1631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334213970848, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334213970922, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213970996, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334213971002, "dur":131015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214102089, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214102182, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214102297, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214102305, "dur":2016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214104401, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214104478, "dur":10457, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214114947, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214114955, "dur":3420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214118451, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214118535, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214118612, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214118618, "dur":13304, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214132017, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214132094, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214132168, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214132175, "dur":1820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214134074, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214134153, "dur":182, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214134341, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214134347, "dur":38402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214172849, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214172939, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214173064, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214173071, "dur":1437, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214174593, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214174676, "dur":240, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214174923, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214174928, "dur":2227, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214177230, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214177302, "dur":159, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214177468, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214177480, "dur":4442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214181995, "dur":147449, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214329444, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214329526, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214329531, "dur":3066, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1695334214332669, "dur":1872, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1695334214334542, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214334615, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1695334214334622, "dur":1542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1695334214336229, "dur":120553, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213933171, "dur":117, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213933288, "dur":7027, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213940320, "dur":305, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1695334213940625, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213940726, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213944087, "dur":3250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1695334213947412, "dur":221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1695334213947633, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213947698, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213948031, "dur":2236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1695334213950343, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":6, "ts":1695334213950466, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213950544, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334213950548, "dur":229191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":6, "ts":1695334214179819, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1695334214179896, "dur":508, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334214180479, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334214180485, "dur":3675, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1695334214184582, "dur":159334, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1695334214343917, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334214344012, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1695334214344020, "dur":2105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1695334214346206, "dur":110572, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213933308, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213933309, "dur":7023, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213940332, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1695334213940513, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213940668, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213944260, "dur":3521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1695334213948378, "dur":590, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1695334213948969, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213949091, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213949097, "dur":3299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1695334213952457, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":7, "ts":1695334213952555, "dur":3293, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213955854, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334213956363, "dur":134899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":7, "ts":1695334214091346, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214091416, "dur":9603, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214101030, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214101039, "dur":2615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214103733, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214103809, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214103889, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214103894, "dur":12803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214116772, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214116849, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214116920, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214116925, "dur":1735, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214118737, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214118824, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214118897, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214118904, "dur":13442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214132483, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214132599, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214132695, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214132700, "dur":24920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214157739, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214157829, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214157944, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214157953, "dur":15588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214173625, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214173703, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214173782, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214173788, "dur":5051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214179733, "dur":314, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214180048, "dur":341, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214180431, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214180438, "dur":3900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214184408, "dur":270735, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214455144, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214455266, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1695334214455272, "dur":1404, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":7, "ts":1695334214456731, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":7, "ts":1695334214456740, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213933361, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213933361, "dur":6950, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213940317, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1695334213940517, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213940604, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213942806, "dur":3447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1695334213946385, "dur":205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1695334213946591, "dur":527, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213947458, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213947466, "dur":6447, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1695334213954014, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334213954107, "dur":1720, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213955846, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213956425, "dur":10049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334213966538, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334213966601, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213966654, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213966660, "dur":1588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334213968320, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334213968399, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213968481, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213968487, "dur":1438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334213970090, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334213970170, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213970330, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334213970335, "dur":1324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334213971726, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334213971801, "dur":129235, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214101042, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214101048, "dur":2184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214103313, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214103391, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214103492, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214103497, "dur":12339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214115917, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214115990, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214116174, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214116208, "dur":2112, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214118439, "dur":338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214118777, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214118864, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214118869, "dur":13726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214132675, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214132754, "dur":393, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214133153, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214133159, "dur":24819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214158069, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214158157, "dur":156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214158320, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214158326, "dur":16789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214175279, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214175359, "dur":253, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214175640, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214175646, "dur":2128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214177849, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214177920, "dur":470, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214178397, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214178403, "dur":3089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214181569, "dur":157856, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214339426, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214339579, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1695334214339629, "dur":1756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"FAULT FIXER ALPHA I/4003 Maze_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":8, "ts":1695334214341463, "dur":115316, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1695334214489037, "dur":2122, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1695334214530908, "dur": 11622, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1695334214518150, "dur": 24427, "ph": "X", "name": "Write chrome-trace events", "args": {} },

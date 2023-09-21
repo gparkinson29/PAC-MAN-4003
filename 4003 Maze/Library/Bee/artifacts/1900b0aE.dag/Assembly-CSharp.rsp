@@ -360,6 +360,7 @@
 "Assets/scripts/MainMenu.cs"
 "Assets/scripts/Pellet.cs"
 "Assets/scripts/Player.cs"
+"Assets/scripts/StunProjectile.cs"
 "Assets/scripts/TailComponent.cs"
 -langversion:9.0
 
