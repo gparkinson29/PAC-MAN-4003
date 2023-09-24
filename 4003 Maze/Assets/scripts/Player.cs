@@ -121,6 +121,7 @@ public class Player : MonoBehaviour
         {
             GameObject newTailPellet = (GameObject)Instantiate(Resources.Load(pelletPrefabName));
             tailComponents.Insert(lastTailIndex, newTailPellet.GetComponent<TailComponent>());
+            tailComponents[lastTailIndex].GetComponentValue();
             
         }
         else
@@ -133,23 +134,51 @@ public class Player : MonoBehaviour
     public void DecreaseTail()
     {
         int lastTailIndex = tailLength % 10;
-        if (tailLength>10)
+        if (tailLength > 10)
         {
-            tailComponents[lastTailIndex].LowerValue(1);
-           
+            tailComponents[lastTailIndex-1].LowerValue(1);
+            
         }
         else
         {
-            TailComponent deadTailPellet = tailComponents[tailLength-1];
+            TailComponent deadTailPellet = tailComponents[tailLength - 1];
+            tailComponents.Remove(deadTailPellet);
             Destroy(deadTailPellet.gameObject);
             
-            tailLength--;
+
+            
         }
 
-        
-
-
+        tailLength--;
     }
+        
+        //when being called for manual reduction for powerups or killing ghosts
+    
+        public void DecreaseTail(int times)
+        {
+            
+
+        for (int i = 0; i < times; i++) {
+
+            if (tailLength > 10)
+            {
+                int lastTailIndex = tailLength % 10;
+                tailLength--;
+                tailComponents[lastTailIndex-1].LowerValue(1);
+                
+            }
+            else
+            {
+                TailComponent deadTailPellet = tailComponents[tailLength - 1];
+                tailComponents.Remove(deadTailPellet);
+                Destroy(deadTailPellet.gameObject);
+                //tailComponents.Insert(tailLength-1, new TailComponent t);
+
+                tailLength--;
+            }
+
+        }
+        }
 
     //---Skill Handling Coroutines---
     IEnumerator DashCoroutine()

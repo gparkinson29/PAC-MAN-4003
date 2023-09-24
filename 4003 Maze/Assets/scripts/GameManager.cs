@@ -173,6 +173,7 @@ public class GameManager : MonoBehaviour
                 if (playerInfo.tailLength >= enemy1dam)
                 {
                     Debug.Log("Enemy 1 down!");
+                    playerInfo.DecreaseTail(enemy1dam);
                     Destroy(oneenemy1);
                     aliveEnemies--;
                 }
@@ -186,6 +187,7 @@ public class GameManager : MonoBehaviour
                 if (playerInfo.tailLength >= enemy2dam)
                 {
                     Debug.Log("Enemy 2 down!");
+                    playerInfo.DecreaseTail(enemy2dam);
                     Destroy(twoenemy2);
                     aliveEnemies--;
                 }
@@ -199,6 +201,7 @@ public class GameManager : MonoBehaviour
                 if(playerInfo.tailLength >= enemy3dam)
                 {
                     Debug.Log("Enemy 3 down!");
+                    playerInfo.DecreaseTail(enemy3dam);
                     Destroy(threeenemy3);
                     aliveEnemies--;
                 }
@@ -212,6 +215,7 @@ public class GameManager : MonoBehaviour
                 if(playerInfo.tailLength >= enemy4dam)
                 {
                     Debug.Log("Enemy 4 down!");
+                    playerInfo.DecreaseTail(enemy4dam);
                     Destroy(fourenemy4);
                     aliveEnemies--;
                 }

@@ -7,7 +7,7 @@ public class TailComponent : MonoBehaviour
     [SerializeField]
     private int value;
     [SerializeField]
-    private MeshRenderer renderer;
+    public MeshRenderer renderer;
     [SerializeField]
     private Material value1Mat, value2Mat, value3Mat, value4Mat, value5Mat;
     public GameManager info;
@@ -16,7 +16,8 @@ public class TailComponent : MonoBehaviour
     {
         value = 1;
         info = Camera.main.GetComponent<GameManager>();
-        renderer = this.GetComponent<MeshRenderer>(); 
+        renderer = this.GetComponent<MeshRenderer>();
+        ReskinComponent();
     }
 
 
@@ -34,6 +35,7 @@ public class TailComponent : MonoBehaviour
     public void LowerValue(int amountToLower)
     {
         value -= amountToLower;
+        ReskinComponent();
     }
 
     public void ReskinComponent()
