@@ -26,8 +26,10 @@ public class GameManager : MonoBehaviour
     private Pellet[] pellets;
     private bool isPlayerAlive;
     private int waveCounterNum;
-    private int aliveEnemies; 
-    
+    private int aliveEnemies;
+
+
+    public GameObject thePauseMenu; 
     public TextMeshProUGUI tailCounter;
     public TextMeshProUGUI waveCounter; 
     public GameObject player1;
@@ -40,7 +42,14 @@ public class GameManager : MonoBehaviour
     public int enemy2dam;
     public int enemy3dam;
     public int enemy4dam;
+    public bool showMenu;
     
+    public GameObject enemyJail;
+    public GameObject enemy1spawn;
+    public GameObject enemy2spawn;
+    public GameObject enemy3spawn;
+    public GameObject enemy4spawn;
+
 
     void Awake()
     {
@@ -52,7 +61,8 @@ public class GameManager : MonoBehaviour
         isHitFront = false;
         isHitBack = false;
         hasNoTail = true;
-        waveCounterNum = 1; 
+        waveCounterNum = 1;
+        showMenu = false; 
         // initialsField.enabled = false;
         // initialsField.characterLimit = 3;
 
@@ -80,15 +90,37 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         nextWave();
+        pauseMenu(); 
     }
 
     void FixedUpdate()
     {
         CheckForTail(); 
         tailCounter.text = "Tail Length: " + playerInfo.tailLength.ToString();
-        waveCounter.text = "Wave: " + waveCounterNum.ToString(); 
+        waveCounter.text = "Wave: " + waveCounterNum.ToString();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+           // showMenu = (showMenu) ? false : true;
+        }
     }
 
+    void pauseMenu()
+    {
+        if (showMenu)
+        {
+            thePauseMenu.SetActive(true);
+            
+        }
+        else
+        {
+            thePauseMenu.SetActive(false);
+        }
+    
+    
+    }
+    
+    
     void SpawnPlayer() //need to make this it's own method because we'll be resetting the player back to the center of the maze between waves
     {
         if (isPlayerAlive == false)
@@ -144,16 +176,100 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void advancingWaves()
+    void enemyResetPositions()
     {
+        oneenemy1.transform.position = enemy1spawn.transform.position;
+        twoenemy2.transform.position = enemy2spawn.transform.position;
+        threeenemy3.transform.position = enemy3spawn.transform.position;
+        fourenemy4.transform.position = enemy4spawn.transform.position;
 
+        oneenemy1.SetActive(true);
+        twoenemy2.SetActive(true);
+        threeenemy3.SetActive(true);
+        fourenemy4.SetActive(true);
+    }
+
+    void advancingWaves(int tracks)
+    {
+        switch (tracks)
+        {
+            case 2:
+
+                enemy1dam = 5;
+                enemy2dam = 5;
+                enemy3dam = 5;
+                enemy4dam = 6;
+
+                enemyResetPositions();
+                
+                aliveEnemies = 4;
+
+                
+            
+                break; 
+            
+            case 3:
+
+                enemy1dam = 5;
+                enemy2dam = 6;
+                enemy3dam = 6;
+                enemy4dam = 7;
+
+                enemyResetPositions();
+
+                aliveEnemies = 4;
+
+                
+
+                break; 
+            
+            case 4:
+
+                enemy1dam = 7;
+                enemy2dam = 7;
+                enemy3dam = 8;
+                enemy4dam = 9;
+
+                enemyResetPositions();
+
+                aliveEnemies = 4;
+
+                
+
+                break;
+            
+            case 5:
+
+                enemy1dam = 8;
+                enemy2dam = 9;
+                enemy3dam = 10;
+                enemy4dam = 10;
+
+                enemyResetPositions();
+
+                aliveEnemies = 4;
+
+                
+
+                break;
+
+            case 6:
+
+            SceneManager.LoadScene(0);
+                break; 
+
+        }
     }
 
     void nextWave()
     {
         if (aliveEnemies == 0)
         {
-            SceneManager.LoadScene(0);
+
+            waveCounterNum++;
+            advancingWaves(waveCounterNum); 
+            
+            //SceneManager.LoadScene(0);
         }
     }
 
@@ -174,8 +290,9 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("Enemy 1 down!");
                     playerInfo.DecreaseTail(enemy1dam);
-                    Destroy(oneenemy1);
+                    oneenemy1.SetActive(false);
                     aliveEnemies--;
+                    Debug.Log(aliveEnemies);
                 }
                 else
                 {
@@ -188,8 +305,9 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("Enemy 2 down!");
                     playerInfo.DecreaseTail(enemy2dam);
-                    Destroy(twoenemy2);
+                    twoenemy2.SetActive(false);  
                     aliveEnemies--;
+                    Debug.Log(aliveEnemies);
                 }
                 else
                 {
@@ -202,8 +320,9 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("Enemy 3 down!");
                     playerInfo.DecreaseTail(enemy3dam);
-                    Destroy(threeenemy3);
+                    threeenemy3.SetActive(false);
                     aliveEnemies--;
+                    Debug.Log(aliveEnemies);
                 }
                 else
                 {
@@ -216,8 +335,9 @@ public class GameManager : MonoBehaviour
                 {
                     Debug.Log("Enemy 4 down!");
                     playerInfo.DecreaseTail(enemy4dam);
-                    Destroy(fourenemy4);
+                    fourenemy4.SetActive(false);
                     aliveEnemies--;
+                    Debug.Log(aliveEnemies);
                 }
                 else
                 {

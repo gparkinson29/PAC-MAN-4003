@@ -79,7 +79,7 @@ public class EnemyBehavior : MonoBehaviour
             int randomnum = Random.Range(0, 4);
             
             navMeshAgent.SetDestination(waypoints[randomnum].position);
-            Debug.Log(randomnum);
+            //Debug.Log(randomnum);
 
         }
     }
