@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
     private string scoreFileName;
     [SerializeField]
     private Pellet[] pellets;
+    [SerializeField]
+    private List<EnemyBehavior> enemies;
+
     private bool isPlayerAlive;
     private int waveCounterNum;
     private int aliveEnemies; 
@@ -63,6 +66,11 @@ public class GameManager : MonoBehaviour
         twoenemy2 = GameObject.FindWithTag("enemy2");
         threeenemy3 = GameObject.FindWithTag("enemy3");
         fourenemy4 = GameObject.FindWithTag("enemy4");
+
+        enemies.Add(oneenemy1.GetComponent<EnemyBehavior>());
+        enemies.Add(twoenemy2.GetComponent<EnemyBehavior>());
+        enemies.Add(threeenemy3.GetComponent<EnemyBehavior>());
+        enemies.Add(fourenemy4.GetComponent<EnemyBehavior>());
 
     }
 
@@ -108,6 +116,14 @@ public class GameManager : MonoBehaviour
         if(playerInfo.tailLength > 0)
         {
             hasNoTail = false; 
+        }
+    }
+
+    public void SetLure(Vector3 positionToMove)
+    {
+       for (int i=0; i < aliveEnemies; i++)
+        {
+            enemies[i].Lure(positionToMove);
         }
     }
 
@@ -160,7 +176,7 @@ public class GameManager : MonoBehaviour
     public void tailTime()
     {
         int wish = playerInfo.tailLength/2;
-        playerInfo.DecreaseTail();
+        playerInfo.DecreaseTail(1);
 
     }
 
@@ -170,12 +186,17 @@ public class GameManager : MonoBehaviour
         switch (tag)
         {
             case "enemy1":
-                if (playerInfo.tailLength >= enemy1dam)
+                if ((playerInfo.tailLength >= enemy1dam) && (!oneenemy1.GetComponent<EnemyBehavior>().stunned))
                 {
                     Debug.Log("Enemy 1 down!");
+                    enemies.Remove(oneenemy1.GetComponent<EnemyBehavior>());
                     playerInfo.DecreaseTail(enemy1dam);
                     Destroy(oneenemy1);
                     aliveEnemies--;
+                }
+                else if (oneenemy1.GetComponent<EnemyBehavior>().stunned)
+                {
+
                 }
                 else
                 {
@@ -184,12 +205,17 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "enemy2":
-                if (playerInfo.tailLength >= enemy2dam)
+                if ((playerInfo.tailLength >= enemy2dam) && (!twoenemy2.GetComponent<EnemyBehavior>().stunned))
                 {
                     Debug.Log("Enemy 2 down!");
+                    enemies.Remove(twoenemy2.GetComponent<EnemyBehavior>());
                     playerInfo.DecreaseTail(enemy2dam);
                     Destroy(twoenemy2);
                     aliveEnemies--;
+                }
+                else if (twoenemy2.GetComponent<EnemyBehavior>().stunned)
+                {
+
                 }
                 else
                 {
@@ -198,12 +224,17 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "enemy3":
-                if(playerInfo.tailLength >= enemy3dam)
+                if((playerInfo.tailLength >= enemy3dam) && (!threeenemy3.GetComponent<EnemyBehavior>().stunned))
                 {
                     Debug.Log("Enemy 3 down!");
+                    enemies.Remove(threeenemy3.GetComponent<EnemyBehavior>());
                     playerInfo.DecreaseTail(enemy3dam);
                     Destroy(threeenemy3);
                     aliveEnemies--;
+                }
+                else if (threeenemy3.GetComponent<EnemyBehavior>().stunned)
+                {
+
                 }
                 else
                 {
@@ -212,12 +243,17 @@ public class GameManager : MonoBehaviour
                 }
                 break;
             case "enemy4":
-                if(playerInfo.tailLength >= enemy4dam)
+                if((playerInfo.tailLength >= enemy4dam) && (!fourenemy4.GetComponent<EnemyBehavior>().stunned))
                 {
                     Debug.Log("Enemy 4 down!");
+                    enemies.Remove(fourenemy4.GetComponent<EnemyBehavior>());
                     playerInfo.DecreaseTail(enemy4dam);
                     Destroy(fourenemy4);
                     aliveEnemies--;
+                }
+                else if (fourenemy4.GetComponent<EnemyBehavior>().stunned)
+                {
+
                 }
                 else
                 {

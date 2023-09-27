@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Vector3 movementDirection, currentPosition, lastPosition;
     [SerializeField]
-    public int tailLength, spacing;
+    public int tailLength;
     [SerializeField]
     private string pelletPrefabName;
     [SerializeField]
@@ -25,20 +25,20 @@ public class Player : MonoBehaviour
     private GameObject projectilePrefab;
     [SerializeField]
     private Transform projectileSpawn;
+    private GameManager gm;
 
     void Awake()
     {
         xInput = 0.0f;
         zInput = 0.0f;
         tailLength = 0;
-        spacing = 10;
         tailComponents = new List<TailComponent>(10);
         pastPositions = new List<Vector3>(100);
+        gm = Camera.main.GetComponent<GameManager>();
     }
 
     void Update()
     {
-
         if (pastPositions.Count > 201)
         {
             pastPositions.RemoveAt(201);
@@ -48,10 +48,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        transform.rotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+
         movementDirection = new Vector3 (xInput, 0f, zInput);
-        nma.Move(movementDirection * Time.deltaTime * nma.speed);
-        
-       // transform.rotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+        nma.Move(movementDirection * Time.fixedDeltaTime * nma.speed);
 
         if (movementDirection != Vector3.zero)
         {
@@ -88,30 +88,96 @@ public class Player : MonoBehaviour
 
     void OnStun()
     {
-        Instantiate(projectilePrefab, projectileSpawn.position, projectileSpawn.rotation);
+        
+        if (ValidateComponentRemoval(1))
+        {
+            DecreaseTail(1);
+            Instantiate(projectilePrefab, projectileSpawn.position, projectileSpawn.rotation);
+        }
+        else
+        {
+            Debug.LogError("tail length not long enough");
+        }
+        
     }
 
     void OnDash()
     {
+        nma.speed = 10;
+        if (ValidateComponentRemoval(2))
+        {
+            DecreaseTail(2);
+        }
+        else
+        {
+            Debug.LogError("tail length not long enough");
+        }
+        StartCoroutine(DashCoroutine());
     }
 
     void OnLure()
     {
+        RaycastHit hit;
 
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 500)) {
+            float distanceToHitPoint = Vector3.Distance(this.transform.position, hit.point);
+            if (distanceToHitPoint<5f)
+            {
+                if (ValidateComponentRemoval(2))
+                {
+                    DecreaseTail(2);
+                    gm.SetLure(hit.point);
+                }
+                else
+                {
+                    Debug.LogError("tail length not long enough");
+                }
+            }
+            else if (distanceToHitPoint>=5f &&  distanceToHitPoint<10f)
+            {
+                if (ValidateComponentRemoval(5))
+                {
+                    DecreaseTail(4);
+                    gm.SetLure(hit.point);
+                }
+                else
+                {
+                    Debug.LogError("tail length not long enough");
+                }
+                
+            }
+            else if (distanceToHitPoint>=10f)
+            {
+                if (ValidateComponentRemoval(10))
+                {
+                    DecreaseTail(8);
+                    gm.SetLure(hit.point);
+                }
+                else
+                {
+                    Debug.LogError("tail length not long enough");
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("Point clicked was not on the NavMesh");
+        }
     }
 
 
     //---Tail Handling Functions---
     void DrawTail()
     {
-        int index = 1;
+        int offset = 50;
         foreach (TailComponent tc in tailComponents)
         {
-            Vector3 tailSegmentPosition = pastPositions[index * spacing];
-            tc.transform.position = tailSegmentPosition; 
+            int indexToRef = (int)(offset / nma.speed);
+            Vector3 tailSegmentPosition = pastPositions[indexToRef];
+            tc.transform.position = tailSegmentPosition;
             tc.transform.LookAt(tailSegmentPosition);
-            index++;
-        }
+            offset += 50;
+        }  
     }
 
     void IncreaseTail()
@@ -131,27 +197,6 @@ public class Player : MonoBehaviour
         tailLength++;
     }
 
-    public void DecreaseTail()
-    {
-        int lastTailIndex = tailLength % 10;
-        if (tailLength > 10)
-        {
-            tailComponents[lastTailIndex-1].LowerValue(1);
-            
-        }
-        else
-        {
-            TailComponent deadTailPellet = tailComponents[tailLength - 1];
-            tailComponents.Remove(deadTailPellet);
-            Destroy(deadTailPellet.gameObject);
-            
-
-            
-        }
-
-        tailLength--;
-    }
-        
         //when being called for manual reduction for powerups or killing ghosts
     
         public void DecreaseTail(int times)
@@ -180,9 +225,22 @@ public class Player : MonoBehaviour
         }
         }
 
+    public bool ValidateComponentRemoval(int amountToRemove)
+    {
+        if (tailLength>=amountToRemove)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     //---Skill Handling Coroutines---
     IEnumerator DashCoroutine()
     {
         yield return new WaitForSeconds(5f);
+        nma.speed = 5;
     }
 }
