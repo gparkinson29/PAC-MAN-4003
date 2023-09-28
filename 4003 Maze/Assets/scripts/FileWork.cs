@@ -29,7 +29,7 @@ public static class FileWork
         }
     }
 
-    public static void ClearFile(string highScoreFile)
+    public static void ClearFile(string highScoreFile) //emptying the score file before rewriting so no excess entries are created
     {
         StreamWriter sw = null;
         try
@@ -50,7 +50,7 @@ public static class FileWork
         }
     }
 
-    public static void SaveScoresToFile(string highScoreFile, HighScore[] scoreList)
+    public static void SaveScoresToFile(string highScoreFile, HighScore[] scoreList) //writing the list of high scores to the text file
     {
         StreamWriter sw = null;
         try
@@ -76,7 +76,7 @@ public static class FileWork
         }
     }
 
-    public static HighScore[] ReadScoresFile(string highScoreFile)
+    public static HighScore[] ReadScoresFile(string highScoreFile) //reading the scores from the text file and making an array of scores from the read data
     {
         HighScore[] scores = new HighScore[5];
         StreamReader sr = null;

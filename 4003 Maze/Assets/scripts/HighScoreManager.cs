@@ -21,17 +21,17 @@ public class HighScoreManager : MonoBehaviour
         
     }
 
-    public void LoadScores()
+    public void LoadScores() //calls static class to read scores from text file
     {
         scoreList = FileWork.ReadScoresFile(scoreFileName);
     }
 
-    public void SaveScores()
+    public void SaveScores() //calls static class to write scores from text file
     {
         FileWork.SaveScoresToFile(scoreFileName, scoreList);
     }
 
-    public bool CheckForHighScore(int score)
+    public bool CheckForHighScore(int score) //validates if the user has made a high score based on the score passed in
     {
        if (score> scoreList[scoreList.Length-1].getHighScore())
         {
@@ -43,7 +43,7 @@ public class HighScoreManager : MonoBehaviour
         }
     }
     
-    public void AddNewScore(int score, string initials)
+    public void AddNewScore(int score, string initials) //adds a new score to the list and shifts existing scores downward in the list
     {
         for (int i = 0; i < scoreList.Length; i++)
         {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pellet: MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other) //determines what the pellet has collided with and determines appropriate response based on object
     {
         if (other.gameObject.tag=="Player")
         {

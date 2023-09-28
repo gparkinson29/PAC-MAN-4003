@@ -9,13 +9,13 @@ public class StunProjectile : MonoBehaviour
     private Rigidbody rb;
 
     // Start is called before the first frame update
-    void Start()
+    void Start() //initializes variable and sets its trajectory
     {
         rb.velocity = this.transform.forward * speed;
 
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision other) //checks what the projectile has collided with and determines response accordingly
     {
         if (other.gameObject.tag=="Walls")
         {

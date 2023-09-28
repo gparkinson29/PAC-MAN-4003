@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
         waveCounter.text = "Wave: " + waveCounterNum.ToString(); 
     }
 
-    void SpawnPlayer() //need to make this it's own method because we'll be resetting the player back to the center of the maze between waves
+    void SpawnPlayer() //spawns the player prefab at a set location
     {
         if (isPlayerAlive == false)
         {
@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetLure(Vector3 positionToMove)
+    public void SetLure(Vector3 positionToMove) //calls the lure method on all living enemies and tells them to move to the clicked position
     {
        for (int i=0; i < aliveEnemies; i++)
         {
@@ -129,7 +129,7 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        if ((isHitFront) || (isHitBack && hasNoTail))
+        if ((isHitFront) || (isHitBack && hasNoTail)) //if the game meets the game over criteria - being hit from the front or hit from the back without a tail - then handle high score validation/entry and return player to main menu
         {
         //    isHighScore = scoreManager.CheckForHighScore(currentScore);
        //     if (isHighScore)
@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour
         }
  //   }
 
-    void ReturnToTitle()
+    void ReturnToTitle() //add the new high score, then write the revised list to the text file, then return the player to the main menu
     {
         scoreManager.AddNewScore(currentScore, initialsField.text);
         FileWork.ClearFile(scoreFileName);
@@ -169,7 +169,8 @@ public class GameManager : MonoBehaviour
     {
         if (aliveEnemies == 0)
         {
-            SceneManager.LoadScene(0);
+            waveCounterNum++;
+            waveCounter.text = waveCounterNum.ToString();
         }
     }
 

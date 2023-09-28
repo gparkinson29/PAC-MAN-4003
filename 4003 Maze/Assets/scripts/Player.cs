@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
         gm = Camera.main.GetComponent<GameManager>();
     }
 
-    void Update()
+    void Update() //if the number of stored positions gets too big, it needs to be culled to prevent performance issues
     {
         if (pastPositions.Count > 201)
         {
@@ -46,14 +46,14 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void FixedUpdate() //rotation and movement handled in FixedUpdate() though not handled by physics
     {
         transform.rotation = Quaternion.LookRotation(movementDirection, Vector3.up);
 
         movementDirection = new Vector3 (xInput, 0f, zInput);
         nma.Move(movementDirection * Time.fixedDeltaTime * nma.speed);
 
-        if (movementDirection != Vector3.zero)
+        if (movementDirection != Vector3.zero) //if the player's position hasn't changed, don't need to draw the tail or update the position list
         {
             lastPosition = currentPosition;
             currentPosition = this.transform.position;
@@ -79,14 +79,14 @@ public class Player : MonoBehaviour
     }
 
     //---Input Action Events---
-    void OnMove(InputValue value)
+    void OnMove(InputValue value) //get the InputValue and store them
     {
         Vector2 inputVector = value.Get<Vector2>();
         xInput = inputVector.x;
         zInput = inputVector.y;
     }
 
-    void OnStun()
+    void OnStun() //when the stun action is executed, check the ability to remove components from tail and if the op is possible, instantiate the stun projectile
     {
         
         if (ValidateComponentRemoval(1))
@@ -101,7 +101,7 @@ public class Player : MonoBehaviour
         
     }
 
-    void OnDash()
+    void OnDash() //when the dash action is executed, check the ability to remove components from tail and if the op is possible, begin the dash powerup
     {
         nma.speed = 10;
         if (ValidateComponentRemoval(2))
@@ -115,7 +115,7 @@ public class Player : MonoBehaviour
         StartCoroutine(DashCoroutine());
     }
 
-    void OnLure()
+    void OnLure() //when the lure action is executed, check if the clicked point is on the navmesh. If so, check the ability to remove components from tail and if the op is possible, begin the lure powerup
     {
         RaycastHit hit;
 
@@ -167,7 +167,7 @@ public class Player : MonoBehaviour
 
 
     //---Tail Handling Functions---
-    void DrawTail()
+    void DrawTail() //evenly spaces the tail components based on the desired spacing/offset and the current speed (except when ramping up and down)
     {
         int offset = 50;
         foreach (TailComponent tc in tailComponents)
@@ -180,7 +180,7 @@ public class Player : MonoBehaviour
         }  
     }
 
-    void IncreaseTail()
+    void IncreaseTail() //gets the last index of the tail's length and also checks the length - if it's less than 10, more pellets need to be added and if not, then the component at should stack
     {
         int lastTailIndex = tailLength % 10;
         if (tailLength<10)
@@ -225,7 +225,7 @@ public class Player : MonoBehaviour
         }
         }
 
-    public bool ValidateComponentRemoval(int amountToRemove)
+    public bool ValidateComponentRemoval(int amountToRemove) //checks if the amount of pellets needed to be removed from the tail can be removed without generating a negative value
     {
         if (tailLength>=amountToRemove)
         {
@@ -238,7 +238,7 @@ public class Player : MonoBehaviour
     }
 
     //---Skill Handling Coroutines---
-    IEnumerator DashCoroutine()
+    IEnumerator DashCoroutine() //runs the dash coroutine for 5 seconds, then reduces the player's speed
     {
         yield return new WaitForSeconds(5f);
         nma.speed = 5;

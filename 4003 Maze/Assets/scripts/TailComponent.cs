@@ -12,7 +12,7 @@ public class TailComponent : MonoBehaviour
     private Material value1Mat, value2Mat, value3Mat, value4Mat, value5Mat;
     public GameManager info;
 
-    void Start()
+    void Start() //initializes necessary variables
     {
         value = 1;
         info = Camera.main.GetComponent<GameManager>();
@@ -21,24 +21,24 @@ public class TailComponent : MonoBehaviour
     }
 
 
-    public int GetComponentValue()
+    public int GetComponentValue() //gets the component's value
     {
         return value;
     }
 
-    public void RaiseValue(int amountToRaise)
+    public void RaiseValue(int amountToRaise) //raises the component's value by the amount passed in and then reskins it based upon the new value
     {
         value += amountToRaise;
         ReskinComponent();
     }
 
-    public void LowerValue(int amountToLower)
+    public void LowerValue(int amountToLower) //lowers the component's value by the amount passed in and then reskins it based upon the new value
     {
         value -= amountToLower;
         ReskinComponent();
     }
 
-    public void ReskinComponent()
+    public void ReskinComponent() //checks the value and assigns a different material based upon the value
     {
         if (value == 1)
         {
@@ -66,7 +66,7 @@ public class TailComponent : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider cos)
+    public void OnTriggerEnter(Collider cos) //checks what the tail component has collided with and manages response accordingly
     {
         if (cos.gameObject.tag.Equals("Player"))
         {

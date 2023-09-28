@@ -12,12 +12,12 @@ public class EnemyBehavior : MonoBehaviour
     public GameObject player1;
     public Vector3 playerLocation;
 
-    private bool chase, flee, lured;
-    public bool stunned;
+    private bool chase, flee, lured; //manages enemy states
+    public bool stunned; //manages enemy states
     string nombre; 
 
     int m_CurrentWaypointIndex = 0;
-    int randomnum;
+    int randomnum; //random waypoint index
 
 
     // Start is called before the first frame update
@@ -44,7 +44,7 @@ public class EnemyBehavior : MonoBehaviour
 
 
     //---Behaviors---
-    void behaviorCheck()
+    void behaviorCheck() //checks the distance from the player and sets its behavior accordingly
     {
         float dist = Vector3.Distance(this.transform.position, player1.transform.position);
         if(dist < 5 && !lured)
@@ -57,7 +57,7 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
     
-    void behaviorTree()
+    void behaviorTree() //sets the behavior of the enemy based upon its current state
     {
         if (chase) {
 
@@ -96,28 +96,27 @@ public class EnemyBehavior : MonoBehaviour
             Debug.Log("boop");
             info.checkKill(nombre); 
         }
-        if (cos.gameObject.layer==LayerMask.NameToLayer("Enemy"))
+        if (cos.gameObject.layer==LayerMask.NameToLayer("Enemy")) //if the enemy is colliding with another enemy, force a repath to a new destination so they don't "clump" together
         {
             navMeshAgent.ResetPath();
             patrol();
         }
-        if (cos.gameObject.tag=="Stun")
+        if (cos.gameObject.tag=="Stun") //if the enemy is struck by a stun projectile, call the stun behavior and destroy the stun projectile
         {
             Stun();
-            Debug.Log("collided with enemy");
             Destroy(cos.gameObject);
         }
     }
 
     //---Responses to powerups---
-    void Stun()
+    void Stun() //because the player and the enemy are both moved with navmesh agents, they will always attempt to avoid one another, so it is necessary to set the radius of the enemy to a tiny amount for the duration of the powerup so that the player can clip through the enemy
     {
         navMeshAgent.radius = 0.1f;
         stunned = true;
         StartCoroutine(StunCoroutine());
     }
 
-    public void Lure(Vector3 positionToMove)
+    public void Lure(Vector3 positionToMove) //moves enemies to the clicked point on the navmesh
     {
         navMeshAgent.SetDestination(positionToMove);
         lured = true;
@@ -125,14 +124,14 @@ public class EnemyBehavior : MonoBehaviour
     }
 
 
-    IEnumerator StunCoroutine()
+    IEnumerator StunCoroutine() //runs stun powerup conditions for 5 seconds, then resets conditions
     {
         yield return new WaitForSeconds(5f);
         navMeshAgent.radius = 1.0f;
         stunned = false;
     }
 
-    IEnumerator LureCoroutine(Vector3 positionToMove)
+    IEnumerator LureCoroutine(Vector3 positionToMove) //runs lure powerup conditions until the agent has reached the destination, then resets the conditions
     {
         while (lured)
         {

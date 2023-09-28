@@ -14,18 +14,12 @@ public class HighScoreMenu : MonoBehaviour
     
     void Awake()
     {
-        highScoreDisplay = FileWork.ReadScoresFile(fileName);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        highScoreDisplay = FileWork.ReadScoresFile(fileName); //gets the scores from the text file and stores them
     }
 
     void FillText()
     {
-        for (int i = 0; i<scoreText.Length; i++)
+        for (int i = 0; i<scoreText.Length; i++) //displays the scores array through individual gui TMP boxes
         {
             scoreText[i].text = highScoreDisplay[i].ToString();
         }
