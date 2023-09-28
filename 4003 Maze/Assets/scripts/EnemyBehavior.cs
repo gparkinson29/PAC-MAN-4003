@@ -11,6 +11,7 @@ public class EnemyBehavior : MonoBehaviour
     public GameManager info;
     public GameObject player1;
     public Vector3 playerLocation;
+    public GameObject camera;
 
     private bool chase, flee;
     string nombre; 
@@ -89,6 +90,7 @@ public class EnemyBehavior : MonoBehaviour
         if (cos.gameObject.tag.Equals("Player"))
         {
             Debug.Log("boop");
+            camera.gameObject.SendMessage("PlayEnemyCollision", SendMessageOptions.DontRequireReceiver);
             info.checkKill(nombre); 
         }
     }

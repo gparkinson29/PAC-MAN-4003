@@ -5,7 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void Play()
+
+
+    //public GameManager gameManager;
+
+    void Update()
+    {
+        //if (gameManager.isGameOver == true)
+        //{
+        //SceneManager.LoadScene("GameOver");
+      }
+
+
+        public void Play()
     {
         SceneManager.LoadScene("SampleScene");
     }

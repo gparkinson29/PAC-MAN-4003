@@ -10827,6 +10827,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3387993640084173670, guid: 9f45b680844c8054a888d569fec6da1e, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 3387993640084173670, guid: 9f45b680844c8054a888d569fec6da1e, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 1125765732}
@@ -10928,6 +10932,10 @@ PrefabInstance:
       value: enemy1
       objectReference: {fileID: 0}
     - target: {fileID: 6058259371044133320, guid: 30905656a27c81c4c97771695b2b32f5, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 6058259371044133320, guid: 30905656a27c81c4c97771695b2b32f5, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
       objectReference: {fileID: 346605615}
@@ -11012,6 +11020,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7067152126156581036, guid: ec44db06c347e8a468eb3c7456c92c75, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 963194225}
     - target: {fileID: 7067152126156581036, guid: ec44db06c347e8a468eb3c7456c92c75, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
@@ -11242,6 +11254,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8685122739551729774, guid: d27260f523b950649b6222610bc8021c, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 963194225}
     - target: {fileID: 8685122739551729774, guid: d27260f523b950649b6222610bc8021c, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 
